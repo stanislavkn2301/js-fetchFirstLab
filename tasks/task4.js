@@ -5,7 +5,9 @@
 
 
 function deleteUser(id) {
-  // Ваш код
+  return fetch(`https://jsonplaceholder.typicode.com/users/${id}`,{
+    method: "DELETE"
+  })
 }
 
 console.log(deleteUser(1));
